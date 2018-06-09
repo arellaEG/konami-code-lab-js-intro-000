@@ -21,12 +21,13 @@ function init() {
   listen()
   if (key===codes[index]){
     index++;
-    listen()
+    listen();
     if (index===codes.length-1){
       alert("YES!");
       index=0;
     }
   } else {
+    listen()
     index=0;
   }
 }
