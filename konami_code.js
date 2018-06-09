@@ -12,9 +12,6 @@ const codes = [
 ];
 
 
-  document.body.addEventListener('keydown', (e) => {
-  const key = KeyboardEvent.key)}
-
 let index =0;
 
 function init() {
