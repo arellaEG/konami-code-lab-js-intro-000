@@ -15,7 +15,7 @@ let index =0;
 
 function init() {
   document.body.addEventListener('keydown', (event)=> {
-  const key = event.key;
+  const key = event.key);
   if (key===codes[index]){
     index++;
     if (index===codes.length-1){
@@ -24,5 +24,5 @@ function init() {
     }
   } else {
     index=0;
-  })
+  }
 }
