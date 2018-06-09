@@ -19,13 +19,11 @@ function init() {
   const key = KeyboardEvent.key)}
   if (key===codes[index]){
     index++;
-    listen();
     if (index===codes.length-1){
       alert("YES!");
       index=0;
     }
   } else {
-    listen()
     index=0;
   }
 }
