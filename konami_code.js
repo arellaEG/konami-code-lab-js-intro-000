@@ -11,14 +11,15 @@ const codes = [
   "a"
 ];
 
-function listen(){
+
   document.body.addEventListener('keydown', (e) => {
   const key = KeyboardEvent.key)}
 
 let index =0;
 
 function init() {
-  listen()
+  document.body.addEventListener('keydown', (e) => {
+  const key = KeyboardEvent.key)}
   if (key===codes[index]){
     index++;
     listen();
