@@ -11,17 +11,18 @@ const codes = [
   "a"
 ];
 
-let index =0;
 
 function init() {
-  document.body.addEventListener('keydown', (event)=> {const key = KeyboardEvent.key;
+  let index=0;
+  
+  document.body.addEventListener('keydown', (e)=> {const key = e.key;
   if (key===codes[index]){
     index++;
-    if (index===codes.length-1){
+    if (index===codes.length){
       alert("YES!");
       index=0;
     }
   } else {
     index=0;
-  }
-)}
+  });
+}
