@@ -21,6 +21,7 @@ function init() {
   listen()
   if (key===codes[index]){
     index++;
+    listen()
     if (index===codes.length-1){
       alert("YES!");
       index=0;
