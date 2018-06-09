@@ -18,6 +18,7 @@ function listen(){
 let index =0;
 
 function init() {
+  listen()
   if (key===codes[index]){
     index++;
     if (index===codes.length-1){
@@ -28,4 +29,3 @@ function init() {
     index=0;
   }
 }
-
