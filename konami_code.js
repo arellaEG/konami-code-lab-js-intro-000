@@ -11,6 +11,18 @@ const codes = [
   "a"
 ];
 
+document.body.addEventListener('keydown', (e) => {
+  const key = KeyboardEvent.key);
+let index =0;
+
 function init() {
-  // your code here
+  if (key===codes[index]){
+    index++;
+    if (index===codes.length-1){
+      alert("YES!");
+      index=0;
+    }
+  } else {
+    index=0;
+  }
 }
